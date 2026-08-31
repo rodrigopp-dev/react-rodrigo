@@ -1,7 +1,7 @@
 console.log("Dragon Ball API");
 
 async function obtenerPersonajes() {
-    const response = await fetch("http://dragonball-api.com/api/characters");
+    const response = await fetch("https://dragonball-api.com/api/characters");
     const data = await response.json();
     console.log('Personajes:', data.items);
     return data.items;
