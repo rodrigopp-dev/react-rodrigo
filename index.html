@@ -1,52 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Rodrigo Pacheco</title>
-  </head>
-  <body>
-    <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-users-vector-icon-png-image_3725294.jpg" alt="Foto" width="100">
-    <h1>Rodrigo Pacheco Pérez</h1>
-    <h2>Ing. Tecnologías de la Información</h2>
-    <p>ut.rodrigo.pacheco@gmail.com</p>
-    <p>+52 4142312438</p>
-    <p>Querétaro, México</p>
-    <h3>Experiencia Profesional</h3>
-    <h4>EY (2022-2025)</h4>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Rodrigo Pacheco Pérez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <h1>RODRIGO PACHECO PÉREZ</h1>
+      <h2>ING. TECNOLOGÍAS DE LA INFORMACIÓN</h2>
+      <p class="contact-info">
+        Tequisquiapan, QRO. |
+        ut.rodrigo.pacheco@gmail.com |
+        +52 (414-231-24-38)
+      </p>
+    </div>
+  </header>
+
+  <nav>
     <ul>
-      <li>Automatización de reportes con Apache POI</li>
-      <li>Extracción de datos de forma automatica de sitios web con Selenium WebDriver</li>
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#practicas">Prácticas FrontEnd</a></li>
     </ul>
-    <h4>Softtek (2021-2022)</h4>
-    <ul>
-      <li>Optimización de código con SonarQube</li>
-    </ul>
-    <h3>Educación</h3>
-    <h4>Universidad Tecnológica de San Juan del río</h4>
-    <h3>Habilidades Técnicas</h3>
-    <ul>
-      <li>Java</li>
-      <li>Spring Boot</li>
-      <li>SQL</li>
-      <li>HTML, CSS, JS</li>
-      <li>Apache POI</li>
-      <li>Selenium WebDriver</li>
-      <li>Git</li>
-    </ul>
-    <h3>Idiomas</h3>
-    <ul>
-      <li>Español: Nativo</li>
-      <li>Inglés: B2</li>
-    </ul>
-    <h2>Practicas</h2>
-    <a href="./practica1.html">Practica 1</a>
-    <br><br>
-    <a href="./practica_rick_morty/index.html">Practica Rick and Morty</a>
-    <br><br>
-    <a href="./practica_dragon_ball/index.html">Practica Dragon Ball</a>
-    
-    <script src="./script.js"></script>
-  </body>
+  </nav>
+
+  <main>
+    <section id="perfil" class="fade-in">
+      <h3>Perfil Profesional</h3>
+      <p class="texto-justificado">Ingeniero en Tecnologias de la Información con más de 3 años de experiencia en
+        consultoría tecnológica y servicios financieros. Enfocado en el desarrollo de soluciones de automatización,
+        microservicios y aplicaciones web. Comprometido con el aprendizaje continuo, con alta capacidad de adaptación y
+        orientación a resultados.</p>
+    </section>
+
+    <section id="experiencia" class="fade-in">
+      <h3>Experiencia Profesional</h3>
+
+      <div class="job">
+        <h4>EY MÉXICO | Staff (Software Developer)</h4>
+        <p class="date">Abril 2022 - Mayo 2025</p>
+        <ul>
+          <li>Automatización de reportes .xlsx con Apache POI.</li>
+          <li>Extracción de datos de forma automática de sitios web con Selenium WebDriver.</li>
+          <li>Implementación de pipelines de CI/CD en Jenkins.</li>
+          <li>Participación activa en proyectos tecnológicos para instituciones financieras líderes en América Latina.
+          </li>
+          <li>Desarrollo y mantenimiento de soluciones de automatización (RPA).</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>SOFTTEK | Desarrollador de software</h4>
+        <p class="date">Noviembre 2021 - Abril 2022</p>
+        <ul>
+          <li>Optimización de código basado en reportes de SonarScanner eliminando vulnerabilidades críticas de
+            seguridad.</li>
+          <li>Desarrollo de APIs RESTful mediante microservicios con Spring Boot para la gestión integral de datos.</li>
+          <li>Implementación de Spring Data JPA para la persistencia en bases de datos relacionales.</li>
+          <li>Colaboración en entornos de integración continua y control de versiones con GitHub.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>STEFANINI MÉXICO | Prácticas Profesionales</h4>
+        <p class="date">Mayo 2019 - Agosto 2019</p>
+        <ul>
+          <li>Prácticas profesionales enfocadas en el aprendizaje y desarrollo con tecnología .NET.</li>
+          <li>Tareas de mantenimiento y mejora de sistemas existentes. Introducción a metodologías de desarrollo ágil y
+            trabajo colaborativo.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="habilidades" class="fade-in">
+      <h3>Habilidades Técnicas</h3>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Desarrollo web: HTML, CSS, JavaScript</li>
+        <li>Bases de datos: SQL Server, MySQL</li>
+        <li>Apache POI</li>
+        <li>Selenium WebDriver</li>
+        <li>Jenkins</li>
+        <li>Control de versiones con GitHub</li>
+        <li>Angular</li>
+        <li>React</li>
+      </ul>
+    </section>
+
+    <section id="educacion" class="fade-in">
+      <h3>Formación y Certificaciones</h3>
+      <div class="edu-item">
+        <h4>INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIÓN</h4>
+        <p>Universidad Tecnológica de San Juan Del Río, San Juan del Río, Qro.</p>
+        <p class="date">2017-2021</p>
+      </div>
+      <div class="edu-item">
+        <h4>Scrum Fundamentals Certified</h4>
+        <p>SCRUMstudy</p>
+      </div>
+      <div class="edu-item">
+        <h4>Idiomas</h4>
+        <p>ESPAÑOL: Nativo</p>
+        <p>INGLÉS: B2</p>
+      </div>
+    </section>
+    <section id="practicas" class="fade-in">
+      <h3>Prácticas FrontEnd (Semana 4)</h3>
+      <div class="projects-grid">
+
+        <!-- Tarjeta de ejemplo 1 -->
+        <div class="project-card">
+          <h4>Shoes Cards</h4>
+          <p class="project-tech">HTML | CSS</p>
+          <a href="./practica1.html" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Rick and Morty Cards</h4>
+          <p class="project-tech">HTML | CSS | JS</p>
+          <a href="./practica_rick_morty/index.html" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Dragon Ball Cards</h4>
+          <p class="project-tech">HTML | CSS | JS</p>
+          <a href="./practica_dragon_ball/index.html" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Dragon Ball React App</h4>
+          <p class="project-tech">React | TypeScript | HTML | CSS</p>
+          <a href="https://rodrigopp-dev.github.io/ejercicios-react/" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Task Flow Info</h4>
+          <p class="project-tech">React | TypeScript | HTML | CSS</p>
+          <a href="https://rodrigopp-dev.github.io/taskflow-react/" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Usuarios CRUD</h4>
+          <p class="project-tech">React | TypeScript | HTML | CSS</p>
+          <a href="https://rodrigopp-dev.github.io/dia-3-datos/" target="_blank" class="btn-link">Ver Práctica</a>
+        </div>
+        <div class="project-card">
+          <h4>Proyecto Final Task Flow</h4>
+          <p class="project-tech">React | TypeScript | HTML | CSS</p>
+          <a href="https://rodrigopp-dev.github.io/jwt-auth-demo/login" target="_blank" class="btn-link">Ver
+            Práctica</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Rodrigo Pacheco Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
